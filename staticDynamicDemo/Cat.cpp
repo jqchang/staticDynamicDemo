@@ -21,5 +21,5 @@ Cat::~Cat() {
 }
 
 void Cat::growl() {
-    std::cout << "Meow!" << std::endl;
+    std::cout << this->getName() << ": Meow!" << std::endl;
 }

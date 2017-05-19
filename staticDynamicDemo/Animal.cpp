@@ -35,5 +35,5 @@ void Animal::setName(const std::string &n) {
 }
 
 void Animal::growl() {
-    std::cout << "Grrrr!" << std::endl;
+    std::cout << this->getName() << ": Grrrr!" << std::endl;
 }

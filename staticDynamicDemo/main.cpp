@@ -23,12 +23,15 @@ int main(int argc, const char * argv[]) {
     Animal f;
     f.setName("Fido");
     cout << "Animal: " << f.getName() << endl;
+    cout << "Provoking... " << endl;
     provoke(&f);
     // As expected, "Grrrr!" appears.
     
     Cat c;
     cout << "Cat: " << c.getName() << endl;
+    cout << "Provoking... " << endl;
     provoke(&c);
+    cout << "Why didn't the cat go Meow!?" << endl;
     // We expect to see "Meow!" because we have a separate Cat.growl() function
     // However, since the provoke function expects an Animal type parameter,
     // the C++ compiler will search for the Animal.growl() function and skip the
